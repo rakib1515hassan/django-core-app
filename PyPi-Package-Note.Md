@@ -186,3 +186,37 @@ pip install rakib-app
 ``` plaintext
 rakib-app
 ```
+
+
+
+
+
+## Complete Cleanup of Build Files
+
+```bash
+# 1. Clean everything
+rm -rf dist/ build/ rakib_app.egg-info/
+
+# 2. Update setup.py with version 0.1.1 and exclude patterns
+
+# 3. Update MANIFEST.in
+
+# 4. Build new package
+python setup.py sdist bdist_wheel
+
+# 5. Upload with verbose
+twine upload --repository testpypi dist/* --verbose
+```
+Or,
+- Complete cleanup
+```bash
+git clean -fdx
+```
+
+- Then rebuild
+```python
+python setup.py sdist bdist_wheel
+``` 
+```bash
+twine upload --repository testpypi dist/* --verbose
+```
