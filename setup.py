@@ -4,15 +4,15 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="rakib-app",  
-    version="0.1.0",
+    name="rakib-django-core",
+    version="0.1.1",  # Version change করুন
     author="Md. Rakib Hassan",
     author_email="rakib1515hassan@gmail.com",
     description="This is a Django-based web application for managing core functionalities.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/rakib1515hassan/django-core-app",
-    packages=find_packages(include=['core', 'core.*']),  # Important fix
+    packages=find_packages(exclude=['*.pyc', '__pycache__']),  # exclude add করুন
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
@@ -32,4 +32,7 @@ setup(
         "Django>=3.2",
     ],
     include_package_data=True,
+    exclude_package_data={
+        '': ['*.pyc', '__pycache__/*'],  # pycache files exclude করুন
+    },
 )
