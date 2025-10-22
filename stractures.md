@@ -1,4 +1,4 @@
-# File Tree: rakib-app
+# File Tree: rakib-django-core
 
 **Generated:** 10/22/2025, 2:59:09 PM
 **Root Path:** `d:\Personal\rakib-app`

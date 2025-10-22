@@ -126,7 +126,7 @@ A reusable Django app for [your app's purpose].
 ## Installation
 
 ```bash
-pip install rakib-app
+pip install rakib-django-core
 ``` 
 
 
@@ -146,8 +146,8 @@ python setup.py sdist bdist_wheel
 
 এটি dist/ folder-এ দুইটি file তৈরি করবে:
 
-- rakib-app-0.1.0.tar.gz
-- my_django_app-0.1.0-py3-none-any.whl
+- rakib-django-core-0.1.0.tar.gz
+- rakib-django-core-0.1.0-py3-none-any.whl
 
 
 ## 4. PyPI-তে Upload করুন
@@ -157,10 +157,14 @@ python setup.py sdist bdist_wheel
 ```python
 twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 ```
+or,
+```python
+twine upload --repository testpypi dist/* --verbose
+``` 
 
 - Test install
 ```python
-pip install --index-url https://test.pypi.org/simple/ rakib-app
+pip install -i https://test.pypi.org/simple/ rakib-django-core==0.1.1
 ```
 
 ### Production:-
@@ -170,7 +174,7 @@ twine upload dist/*
 ``` 
 - PyPI থেকে install করুন
 ```python
-pip install rakib-app
+pip install rakib-django-core
 ```
 
 
@@ -179,12 +183,12 @@ pip install rakib-app
 
 - সরাসরি install
 ```python
-pip install rakib-app
+pip install rakib-django-core
 ```
 
 - অথবা requirements.txt ফাইলে যোগ করে
 ``` plaintext
-rakib-app
+rakib-django-core
 ```
 
 

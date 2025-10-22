@@ -5,7 +5,7 @@ A reusable Django app for core functionalities including utilities, services, an
 ## Installation
 
 ```bash
-pip install rakib-app
+pip install rakib-django-core
 ```
 
 ## Usage
