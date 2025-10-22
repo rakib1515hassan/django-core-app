@@ -1,5 +1,6 @@
 include LICENSE
 include README.md
-recursive-include my_django_app/templates *
-recursive-include my_django_app/static *
-recursive-include my_django_app/locale *
+recursive-include core/templates *
+recursive-include core/static *
+recursive-include core/locale *
+recursive-include core/migrations *

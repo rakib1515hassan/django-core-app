@@ -4,15 +4,15 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="core",
+    name="rakib-app",  
     version="0.1.0",
     author="Md. Rakib Hassan",
     author_email="rakib1515hassan@gmail.com",
     description="This is a Django-based web application for managing core functionalities.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/my-django-app",
-    packages=find_packages(),
+    url="https://github.com/rakib1515hassan/django-core-app",
+    packages=find_packages(include=['core', 'core.*']),  # Important fix
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
