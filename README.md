@@ -4,6 +4,11 @@ A reusable Django app for core functionalities including utilities, services, an
 
 ## Installation
 
+### From Test PyPI (Development):
+```bash
+pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ rakib-django-core==0.1.1
+```
+### From PyPI (Stable Release):
 ```bash
 pip install rakib-django-core
 ```

@@ -30,7 +30,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="rakib-django-core",
-    version="0.1.1",  # Version change করুন
+    version="0.1.2",  # Version change করুন
     author="Md. Rakib Hassan",
     author_email="rakib1515hassan@gmail.com",
     description="This is a Django-based web application for managing core functionalities.",
@@ -72,7 +72,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rakib-django-core"
-version = "0.1.1"
+version = "0.1.2"
 authors = [
     {name = "Md. Rakib Hassan", email = "rakib1515hassan@gmail.com"},
 ]
